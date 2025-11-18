@@ -2,7 +2,7 @@ import Database from 'better-sqlite3';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const DB_PATH = process.env.DB_PATH || './traycer.db';
+const DB_PATH = process.env.DB_PATH || './cli-editor.db';
 
 let db: Database.Database;
 

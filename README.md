@@ -1,4 +1,4 @@
-# Traycer CLI - AI-Powered Code Generation & Modification
+# CLI Editor - AI-Powered Code Generation & Modification
 
 A powerful CLI-based backend prototype that uses AI (GPT-4o Mini) to generate and modify code in existing repositories through natural language prompts.
 
@@ -61,7 +61,7 @@ A powerful CLI-based backend prototype that uses AI (GPT-4o Mini) to generate an
 1. **Clone the repository**
 
    ```bash
-   cd traycer-ai-assignment
+   cd cli-editor-ai-assignment
    ```
 
 2. **Install dependencies**

@@ -30,7 +30,7 @@ export const config = {
 
   // Database
   database: {
-    path: process.env.DB_PATH || './traycer.db',
+    path: process.env.DB_PATH || './cli-editor.db',
   },
 
   // CLI

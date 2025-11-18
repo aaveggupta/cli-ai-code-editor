@@ -1,5 +1,5 @@
 {
-  "name": "traycer-cli",
+  "name": "cli-editor",
   "version": "1.0.0",
   "description": "CLI-based backend prototype for AI-powered code generation and modification",
   "main": "dist/index.js",

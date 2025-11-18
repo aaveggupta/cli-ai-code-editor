@@ -16,7 +16,7 @@ const program = new Command();
 // Store credentials in-memory for CLI session
 let currentUser: { id: string; username: string; apiKey: string } | null = null;
 
-const CONFIG_FILE = path.join(process.env.HOME || '', '.traycer-cli.json');
+const CONFIG_FILE = path.join(process.env.HOME || '', '.cli-editor.json');
 
 async function loadCredentials(): Promise<void> {
   try {
@@ -42,7 +42,7 @@ async function clearCredentials(): Promise<void> {
 }
 
 program
-  .name('traycer')
+  .name('cli-editor')
   .description('AI-powered code generation and modification CLI')
   .version('1.0.0');
 
@@ -162,7 +162,7 @@ program
     await loadCredentials();
 
     if (!currentUser) {
-      Logger.error('You must be logged in to execute prompts. Use "traycer login" or "traycer register"');
+      Logger.error('You must be logged in to execute prompts. Use "cli-editor login" or "cli-editor register"');
       return;
     }
 
@@ -186,7 +186,7 @@ program
 
     const targetRepo = path.resolve(options.repo);
 
-    Logger.section('TRAYCER AI CODE MODIFICATION');
+    Logger.section('CLI EDITOR AI CODE MODIFICATION');
     Logger.info(`Target Repository: ${targetRepo}`);
     Logger.info(`Prompt: ${promptText}`);
     Logger.info('');
@@ -216,7 +216,7 @@ program
     await loadCredentials();
 
     if (!currentUser) {
-      Logger.error('You must be logged in. Use "traycer login" or "traycer register"');
+      Logger.error('You must be logged in. Use "cli-editor login" or "cli-editor register"');
       return;
     }
 
@@ -257,7 +257,7 @@ program
     await loadCredentials();
 
     if (!currentUser) {
-      Logger.error('You must be logged in. Use "traycer login" or "traycer register"');
+      Logger.error('You must be logged in. Use "cli-editor login" or "cli-editor register"');
       return;
     }
 
